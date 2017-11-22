@@ -12,7 +12,7 @@ def printHeadline(headline):
     printer.boldOff()
     printer.underlineOff()
 
-printer.printImage(Image.open('gfx/pitimes.png'), True)
+printer.printImage(Image.open('python/gfx/pitimes.png'), True)
 
 printHeadline("Cook County commissioners approve 2018 budget with over 300 layoffs")
 printer.println("CHICAGO - The Cook County commissioners unanimously passed the 2018 budget Tuesday, cutting $200 million and over 300 jobs in the process.")
