@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from PIL import Image
 from Adafruit_Thermal import *
 
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
