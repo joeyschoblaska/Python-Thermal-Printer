@@ -20,6 +20,6 @@ printer.println("The F.C.C. unveiled a plan to repeal net neutrality rules, whic
 
 printer.feed(2)
 
-printer.println("Nancy Pelosi, the House Democratic leader, has called on the Ethics Committee to investigate sexual harassment charges against John Conyers Jr., the House’s longest-serving member.")
+printer.println("Nancy Pelosi, the House Democratic leader, has called on the Ethics Committee to investigate sexual harassment charges against John Conyers Jr., the House's longest-serving member.")
 
 printer.feed(4)
