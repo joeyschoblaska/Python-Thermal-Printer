@@ -7,7 +7,7 @@ set :public_children, []
 set :use_sudo, false
 
 task :println do
-  line = ARGV.drop(2).join(" ")
+  line = ENV["LINE"]
 
   on roles(:app) do
     execute "cd #{current_path} && python python/println.py #{line}"
@@ -15,7 +15,9 @@ task :println do
 end
 
 task :invoke do
+  command = ENV["COMMAND"]
+
   on roles(:app) do
-    execute "cd #{current_path} && python python/#{ARGV[2]}.py"
+    execute "cd #{current_path} && python python/#{command}.py"
   end
 end
