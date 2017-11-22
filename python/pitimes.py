@@ -14,6 +14,16 @@ def printHeadline(headline):
 
 printer.printImage(Image.open('python/gfx/pitimes.png'), True)
 
+printer.justify("C")
+printer.println("Tuesday, November 21")
+printer.justify("L")
+
+printer.feed(2)
+
+printer.println("Tonight: Mostly clear, with a low around 26. Northwest wind 10 to 15 mph, with gusts as high as 20 mph.")
+
+printer.feed(2)
+
 printHeadline("Cook County commissioners approve 2018 budget with over 300 layoffs")
 printer.println("CHICAGO - The Cook County commissioners unanimously passed the 2018 budget Tuesday, cutting $200 million and over 300 jobs in the process.")
 
