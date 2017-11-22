@@ -13,3 +13,9 @@ task :println do
     execute "cd #{current_path} && python python/println.py #{line}"
   end
 end
+
+task :invoke do
+  on roles(:app) do
+    execute "cd #{current_path} && python python/#{ARGV[2]}.py"
+  end
+end
